@@ -12,6 +12,8 @@ typedef struct node * TList;
 
 int isEmpty(TList l);
 
+int newList();
+
 int belongs(const TList l, int n);
 
 void freeList(TList l);
