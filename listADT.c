@@ -24,14 +24,14 @@ int belongs(const TList l, int n) {
     if ( l == NULL || l->elem > n) {
         return 0;
     }
-    return l->elem == n || belongs(l->tail, n);
+    return l->elem == n || belongs(l->next, n);
 }
 
 void freeList(TList l) {
     if ( l == NULL) {
         return;
     }
-    freeList(l->tail);
+    freeList(l->next);
     free(l);
 
 }
