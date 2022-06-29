@@ -3,10 +3,6 @@
 // Lista de enteros ordenada y sin repetidos
 //
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <assert.h>
-
 typedef struct node {
     int elem;       // el dato que almacena el nodo
     struct node * next;   // la sublista
