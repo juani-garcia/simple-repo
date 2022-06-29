@@ -22,3 +22,12 @@ int belongs(const TList l, int n) {
     }
     return l->elem == n || belongs(l->tail, n);
 }
+
+void freeList(TList l) {
+    if ( l == NULL) {
+        return;
+    }
+    freeList(l->tail);
+    free(l);
+
+}
