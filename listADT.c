@@ -15,6 +15,10 @@ int isEmpty(TList l) {
     return l == NULL;
 }
 
+static void isEmptyWrapper() {
+	return isEmpry(NULL);
+}
+
 // 1 ai n está en la lista, 0 sinó
 int belongs(const TList l, int n) {
     if ( l == NULL || l->elem > n) {
