@@ -10,6 +10,7 @@
 
 
 int isEmpty(TList l) {
+    printf("isEmpty from branch belongs");
     return l == NULL;
 }
 
