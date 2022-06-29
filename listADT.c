@@ -10,5 +10,6 @@
 
 
 int isEmpty(TList l) {
+    printf("isEmpty from branch master\n");
     return l == NULL;
 }
