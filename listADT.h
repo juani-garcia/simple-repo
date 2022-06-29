@@ -9,7 +9,7 @@
 
 typedef struct node {
     int elem;       // el dato que almacena el nodo
-    struct node * tail;   // la sublista
+    struct node * next;   // la sublista
 } node;
 
 typedef struct node * TList;
